@@ -9,7 +9,7 @@ class HelloWorld
         Console.WriteLine("Hi " + name + ", willkommen in der Welt des Programmierens.");
         Console.WriteLine("");
         Console.WriteLine("zum Beenden Taste drücken.");
-        Console.ReadKey();
+        Console.ReadKey(true);
     }
 }
 

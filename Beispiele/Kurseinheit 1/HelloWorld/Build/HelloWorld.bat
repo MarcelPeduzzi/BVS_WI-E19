@@ -1,1 +1,1 @@
-csc /t:exe ..\Source\HelloWorld\Program.cs
+csc /t:exe ..\Source\HelloWorld\HelloWorld.cs
