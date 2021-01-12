@@ -14,14 +14,14 @@ namespace ULogischeOperatoren
         {
             // Code ....
             // 1. Ausdruck: 4 > 3 && -4 > -3;
-            LblAnzeige.Text = "Ergebnis: " + p; //p muss als Variabel vom korrekten Typ definiert werden
+            LblAnzeige.Text = "Ergebnis: " + p; //p muss als Variable vom korrekten Typ definiert werden
         }
 
         private void CmdAnzeigen2_Click(object sender, EventArgs e)
         {
             // Code ....
             // 1. Ausdruck: 4 > 3 || -4 > -3;
-            LblAnzeige.Text = "Ergebnis: " + p; //p muss als Variabel vom korrekten Typ definiert werden
+            LblAnzeige.Text = "Ergebnis: " + p; //p muss als Variable vom korrekten Typ definiert werden
         }
     }
 }
