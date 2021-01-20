@@ -16,23 +16,21 @@ namespace Methoden
             ////
             //// Aufruf By Value
             ////
-            //zahl1 = 10;
-            //zahl2 = 20;
+            zahl1 = 10;
+            zahl2 = 20;
 
-            //Console.WriteLine($"zahl1: {zahl1}");
-            //Console.WriteLine($"zahl2: {zahl2}");
+            Console.WriteLine($"zahl1: {zahl1}");
+            Console.WriteLine($"zahl2: {zahl2}");
 
-            //zahl3 = MethodByValue(zahl1, zahl2);
+            zahl3 = MethodByValue(zahl1, zahl2);
 
-            //Console.WriteLine($"Nach Auruf {nameof(MethodByValue)}");
-            //Console.WriteLine($"zahl1: {zahl1}");
-            //Console.WriteLine($"zahl2: {zahl2}");
-            //Console.WriteLine($"zahl3: {zahl3}");
+            Console.WriteLine($"Nach Auruf {nameof(MethodByValue)}");
+            Console.WriteLine($"zahl1: {zahl1}");
+            Console.WriteLine($"zahl2: {zahl2}");
+            Console.WriteLine($"zahl3: {zahl3}");
 
-            //Console.ReadKey(true);
-            //Console.WriteLine();
-
-
+            Console.ReadKey(true);
+            Console.WriteLine();
 
 
 
@@ -41,23 +39,25 @@ namespace Methoden
 
 
 
-            ////
-            //// Aufruf By Reference
-            ////
-            //zahl1 = 10;
-            //zahl2 = 20;
 
-            //Console.WriteLine($"zahl1: {zahl1}");
-            //Console.WriteLine($"zahl2: {zahl2}");
 
-            //MethodWithRef(zahl1, ref zahl2);
+            //
+            // Aufruf By Reference
+            //
+            zahl1 = 10;
+            zahl2 = 20;
 
-            //Console.WriteLine($"Nach Auruf {nameof(MethodWithRef)}");
-            //Console.WriteLine($"zahl1: {zahl1}");
-            //Console.WriteLine($"zahl2: {zahl2}");
+            Console.WriteLine($"zahl1: {zahl1}");
+            Console.WriteLine($"zahl2: {zahl2}");
 
-            //Console.ReadKey(true);
-            //Console.WriteLine();
+            MethodWithRef(zahl1, ref zahl2);
+
+            Console.WriteLine($"Nach Auruf {nameof(MethodWithRef)}");
+            Console.WriteLine($"zahl1: {zahl1}");
+            Console.WriteLine($"zahl2: {zahl2}");
+
+            Console.ReadKey(true);
+            Console.WriteLine();
 
             //
             // Aufruf By Out
@@ -111,7 +111,7 @@ namespace Methoden
 
         private static void MethodWithRef(int zahl1, ref int zahl2)
         {
-            zahl1 += zahl1;
+            zahl2 += zahl1;
         }
 
         private static void MethodWithOut(int zahl1, int zahl2, out int zahl3)
