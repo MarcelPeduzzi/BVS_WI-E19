@@ -18,39 +18,7 @@ namespace Taschenrechner
 
             Console.ReadKey(false);
         }
-    }
 
-    class Rechner
-    {
-        public double Zahl1 { get; }
-        public double Zahl2 { get; }
-
-        public Rechner(double zahl1, double zahl2)
-        {
-            Zahl1 = zahl1;
-            Zahl2 = zahl2;
-        }
-
-        public double Addieren()
-        {
-            return Zahl1 + Zahl2;
-        }
-
-        public double Subtrahieren()
-        {
-            return Zahl1 - Zahl2;
-        }
-
-        public double Dividieren()
-        {
-            return Zahl1 / Zahl2;
-        }
-
-        public double Multiplizieren()
-        {
-            return Zahl1 * Zahl2;
-        }
-
-
+        // Klasse Rechner erstellen
     }
 }
