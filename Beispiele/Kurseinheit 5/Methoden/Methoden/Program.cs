@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Methoden
 {
@@ -33,14 +29,6 @@ namespace Methoden
             Console.WriteLine();
 
 
-
-
-
-
-
-
-
-
             //
             // Aufruf By Reference
             //
@@ -62,21 +50,21 @@ namespace Methoden
             //
             // Aufruf By Out
             //
-            //zahl1 = 10;
-            //zahl2 = 20;
+            zahl1 = 10;
+            zahl2 = 20;
 
-            //Console.WriteLine($"zahl1: {zahl1}");
-            //Console.WriteLine($"zahl2: {zahl2}");
+            Console.WriteLine($"zahl1: {zahl1}");
+            Console.WriteLine($"zahl2: {zahl2}");
 
-            //MethodWithOut(zahl1, zahl2, out zahl3);
+            MethodWithOut(zahl1, zahl2, out zahl3);
 
-            //Console.WriteLine($"Nach Auruf {nameof(MethodWithOut)}");
-            //Console.WriteLine($"zahl1: {zahl1}");
-            //Console.WriteLine($"zahl2: {zahl2}");
-            //Console.WriteLine($"zahl3: {zahl3}");
+            Console.WriteLine($"Nach Auruf {nameof(MethodWithOut)}");
+            Console.WriteLine($"zahl1: {zahl1}");
+            Console.WriteLine($"zahl2: {zahl2}");
+            Console.WriteLine($"zahl3: {zahl3}");
 
-            //Console.ReadKey(true);
-            //Console.WriteLine();
+            Console.ReadKey(true);
+            Console.WriteLine();
 
             //
             // Optionaler Parameter
@@ -100,9 +88,9 @@ namespace Methoden
                 Console.WriteLine(item);
             }
 
-            //Console.WriteLine($"Autor: {buch[1]}");
-            //Console.WriteLine($"Titel: {buch[0]}");
-            //Console.WriteLine($"Termin: {buch[2]}");
+            Console.WriteLine($"Autor: {buch[1]}");
+            Console.WriteLine($"Titel: {buch[0]}");
+            Console.WriteLine($"Termin: {buch[2]}");
 
             Console.ReadKey(true);
         }
